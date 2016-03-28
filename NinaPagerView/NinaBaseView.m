@@ -135,6 +135,7 @@
 - (void)touchAction:(UIButton *)button {
     [_scrollView setContentOffset:CGPointMake(FUll_VIEW_WIDTH * button.tag, 0) animated:YES];
     self.currentPage = (FUll_VIEW_WIDTH * button.tag + FUll_VIEW_WIDTH / 2) / FUll_VIEW_WIDTH;
+    NSLog(@"您点击了第%li个TopTab button,you clicked %li TopTab button",(long)button.tag + 1,(long)button.tag + 1);
 }
 
 #pragma mark - UIScrollViewDelegate
